@@ -19,7 +19,7 @@ pipeline {
             steps {
                 script {
                     // Creamos un index.html básico para el Hello World
-                    sh "echo '<h1>¡Hola Esteban! Prueba de Swarm + Traefik Exitosa</h1>' > index.html"
+                    sh "echo '<h1>Hola prueba CI/CD Prueba de Swarm + Traefik Exitosa</h1>' > index.html"
                     // Dockerfile rápido en línea para la prueba
                     sh "echo 'FROM nginx:alpine\nCOPY index.html /usr/share/nginx/html/' > Dockerfile"
                     
