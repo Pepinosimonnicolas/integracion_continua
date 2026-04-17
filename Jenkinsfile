@@ -32,7 +32,6 @@ pipeline {
         stage('Subir al Registro') {
             steps {
                 echo "Subiendo imagen al registro local..."
-                sh "docker push ${IMAGE_NAME}:${env.BUILD_ID}"
                 sh "docker push ${IMAGE_NAME}:latest"
             }
         }
