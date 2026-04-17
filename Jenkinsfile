@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        REGISTRY = "registry:5000"
+        REGISTRY = "registry.br-ainiac.net"
         IMAGE_NAME = "${REGISTRY}/hello-world"
         STACK_NAME = "prueba-hello"
     }
